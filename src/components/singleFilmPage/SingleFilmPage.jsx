@@ -56,7 +56,7 @@ const SingleFilmPage = ({films, changeFilms}) => {
                     {favourites ? 'Убрать из избранного' : 'Добавить в избранное'}
                 </button>
             </div>
-            <Link to='/films' className="single-film__back">Back to all</Link>
+            <Link to='/' className="single-film__back">Back to all</Link>
         </div>
     )
 }

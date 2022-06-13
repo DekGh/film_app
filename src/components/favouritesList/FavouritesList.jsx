@@ -13,7 +13,7 @@ const FavouritesList = ({films}) => {
                 <li
                     className='film__item'
                     key={items.filmId}>
-                    <Link to={`/films/${items.filmId}`}>
+                    <Link to={`/${items.filmId}`}>
                         <img src={items.posterUrl} alt={items.nameRu} className="film__item__img"/>
                         <div className="film__name">{items.nameRu}</div>
                     </Link>

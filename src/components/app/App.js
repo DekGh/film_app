@@ -43,10 +43,10 @@ function App() {
         <AppHeader/>
         <main>
           <Routes>
-            <Route path='/films' element={<FilmList
+            <Route path='/' element={<FilmList
                 films={films}
                 upCountPage={upCountPage}/>}></Route>
-            <Route path='/films/:filmId' element={<SingleFilmPage
+            <Route path='/:filmId' element={<SingleFilmPage
                 films={films}
                 changeFilms={changeFilms}/>}></Route>
             <Route path='/favouriteFilms' element={<FavouritesList films={films}/>}></Route>
