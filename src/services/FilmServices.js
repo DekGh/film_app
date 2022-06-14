@@ -24,9 +24,11 @@ const FilmServices = () => {
 
     const _transformFilms = (films) => {
 
+        const isLongName = films.nameRu.length > 29 && films.nameRu.slice(0, 30) + ' ...';
+
         return {
             filmId: films.filmId,
-            nameRu: films.nameRu,
+            nameRu: isLongName || films.nameRu,
             posterUrl: films.posterUrl,
             rating: films.rating,
             favourites: false
