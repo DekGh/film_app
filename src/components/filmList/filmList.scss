@@ -1,8 +1,7 @@
 .film {
   &__grid {
     display: grid;
-    grid-template-columns: repeat(4, 225px);
-    column-gap: 40px;
+    grid-template-columns: 25% 25% 25% 25%;
     row-gap: 30px;
   }
   &__item {
@@ -13,7 +12,6 @@
     list-style-type: none;
     padding: 15px;
     cursor: pointer;
-    transition: 0.3s transform;
     &__img {
       width: 200px;
       height: 300px;

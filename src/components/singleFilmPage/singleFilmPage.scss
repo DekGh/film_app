@@ -1,11 +1,10 @@
 .single-film {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 293px 550px auto;
-  column-gap: 50px;
-  align-items: start;
+  grid-template-columns: 30% 50% auto;
+  column-gap: 20px;
   &__img {
-    width: 293px;
+    width: 300px;
     height: 450px;
   }
   &__name {
