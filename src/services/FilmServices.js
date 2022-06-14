@@ -4,12 +4,11 @@ const FilmServices = () => {
     const _apiKey = 'd85385a4-3668-4103-9cbf-a7b5065f8aaa';
 
     const getResource = async (url) => {
-        let res = await (await fetch(url,
+        let res = await fetch(url,
             {method: 'GET',
                 headers: {'X-API-KEY': _apiKey, 'Content-Type': 'application/json'}})
-            ).json()
 
-        return res
+        return res.json()
     }
 
     const getTopFilms = async (pageNumber) => {
@@ -24,7 +23,7 @@ const FilmServices = () => {
 
     const _transformFilms = (films) => {
 
-        const isLongName = films.nameRu.length > 29 && films.nameRu.slice(0, 30) + ' ...';
+        const isLongName = films.nameRu.length > 30 && films.nameRu.slice(0, 30) + ' ...';
 
         return {
             filmId: films.filmId,
